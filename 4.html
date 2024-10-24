@@ -1,0 +1,72 @@
+<!-- Common components to be included in all pages -->
+<template id="header">
+    <header class="header">
+      <div class="header-content">
+        <div class="group">
+          <div class="text-wrapper">Name</div>
+          <img class="person" src="img/person.svg" alt="User icon">
+        </div>
+        <div class="frame">
+          <div class="group-2">
+            <img class="line" src="img/line-4.svg" alt="">
+            <img class="img" src="img/line-8.svg" alt="">
+            <img class="line-2" src="img/line-6.svg" alt="">
+          </div>
+        </div>
+        <div class="logo">
+          <div class="text-wrapper">Purdue Parking</div>
+        </div>
+      </div>
+    </header>
+  </template>
+  <!-- sidebar.html -->
+<div class="sidebar" id="sidebar">
+    <button onclick="document.getElementById('sidebar').style.display='none'">X Close</button>
+    <a href="/payments">Payments</a>
+    <a href="7.html">Settings</a>
+    <a href="8.html">Contact Us</a>
+    <a href="1.html">Log Out</a>
+</div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Button to open the sidebar -->
+    <button class="open-btn" onclick="document.getElementById('sidebar').style.display='block'">☰ Open Sidebar</button>
+</body>
+</html>
+
+
+
+  <!-- 4. Near Parking Spaces -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Available Spaces - Purdue Parking</title>
+      <link rel="stylesheet" href="globals.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="near-parking-spaces">
+          <header-component></header-component>
+          <h2>Parking Spaces Near You</h2>
+          
+          <div class="spaces-grid">
+              <!-- Repeated for each available space -->
+              <div class="space-card">
+                  <h3>Parking Lot C</h3>
+                  <h3>Spot availability:</h3>
+                  <a href="5.html">
+                  <div class="spot-number">A12</div>
+                </a>
+                  <div class="details">
+                      <div class="rate">$3/hr</div>
+                      <div class="permits">A&B Permits</div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>

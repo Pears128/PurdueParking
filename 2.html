@@ -1,0 +1,108 @@
+<!-- Common components to be included in all pages -->
+<template id="header">
+    <header class="header">
+      <div class="header-content">
+        <div class="group">
+          <div class="text-wrapper">Name</div>
+          <img class="person" src="img/person.svg" alt="User icon">
+        </div>
+        <div class="frame">
+          <div class="group-2">
+            <img class="line" src="img/line-4.svg" alt="">
+            <img class="img" src="img/line-8.svg" alt="">
+            <img class="line-2" src="img/line-6.svg" alt="">
+          </div>
+        </div>
+        <div class="logo">
+          <div class="text-wrapper">Purdue Parking</div>
+        </div>
+      </div>
+    </header>
+  </template>
+  
+  <!-- sidebar.html -->
+<div class="sidebar" id="sidebar">
+    <button onclick="document.getElementById('sidebar').style.display='none'">X Close</button>
+    <a href="/payments">Payments</a>
+    <a href="7.html">Settings</a>
+    <a href="8.html">Contact Us</a>
+    <a href="1.html">Log Out</a>
+</div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Button to open the sidebar -->
+    <button class="open-btn" onclick="document.getElementById('sidebar').style.display='block'">☰ Open Sidebar</button>
+</body>
+</html>
+
+
+
+  <!-- 2. Homepage -->
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Purdue Parking</title>
+    
+    <link rel="stylesheet" href="globals.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add a scrollable container */
+        .info-container {
+            display: grid;
+            grid-template-columns: 1fr; /* Single-column grid */
+            max-height: 170px; /* Adjust height as needed */
+            max-width: 190px; /* Adjust height as needed */
+            overflow-y: auto; /* Enable vertical scrolling */
+            padding: 20px;
+            border: 1px solid #ccc; /* Optional border for styling */
+        }
+
+        /* Ensure paragraph text wraps properly */
+        .info-container p {
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="homepage-website">
+        <header-component></header-component>
+        <main>
+            <div class="search-section">
+                <div class="address-selector">
+                    <select class="location-dropdown">
+                        <option>Choose Address</option>
+                    </select>
+                </div>
+                <div class="find-parking-button">
+                    <br>
+                    <a href="3.html" class="primary-btn">
+                        <span>Find Parking Near Me</span>
+                        <img class="map-pin" src="img/map-pin-2.svg" alt="MapSymbol">
+                    </a>
+                </div>
+            </div>
+
+            <section class="how-it-works">
+                <h2>How Purdue Parking Works</h2>
+                <div class="info-container">
+                    <div class="parking-app-info">
+                        <h3>Finding Parking Spots:</h3>
+                        <p>See parking availability around campus. Choose the lot that best works for you or click the instant near available parking spots search button.</p>
+                        
+                        <h3>Paying Parking Ticket:</h3>
+                        <p>Save time and pay for your parking here instead of having to go to the ticket machines. Scan your QR code at the exit. Register your credit/debit cards for quick checkouts!</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
+
+
