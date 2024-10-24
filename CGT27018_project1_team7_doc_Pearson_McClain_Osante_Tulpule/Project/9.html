@@ -1,0 +1,116 @@
+<!-- Common components to be included in all pages -->
+<template id="header">
+    <header class="header">
+      <div class="header-content">
+        <div class="group">
+          <div class="text-wrapper">Name</div>
+          <img class="person" src="img/person.svg" alt="User icon">
+        </div>
+        <div class="frame">
+          <div class="group-2">
+            <img class="line" src="img/line-4.svg" alt="">
+            <img class="img" src="img/line-8.svg" alt="">
+            <img class="line-2" src="img/line-6.svg" alt="">
+          </div>
+        </div>
+        <div class="logo">
+          <div class="text-wrapper">Purdue Parking</div>
+        </div>
+      </div>
+    </header>
+  </template>
+  <!-- sidebar.html -->
+<div class="sidebar" id="sidebar">
+    <button onclick="document.getElementById('sidebar').style.display='none'">X Close</button>
+    <a href="/payments">Payments</a>
+    <a href="7.html">Settings</a>
+    <a href="8.html">Contact Us</a>
+    <a href="1.html">Log Out</a>
+</div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Button to open the sidebar -->
+    <button class="open-btn" onclick="document.getElementById('sidebar').style.display='block'">☰ Open Sidebar</button>
+</body>
+</html>
+
+
+
+
+  <!-- 9. Payment Success -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Payment Success - Purdue Parking</title>
+      <link rel="stylesheet" href="globals.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="completed-payment">
+          <header-component></header-component>
+          
+          <main>
+              <img src="img/1059043-1.png" alt="Success checkmark">
+              <h2>Payment Success!</h2>
+              <p class="instructions">
+                  Make sure to have the QR code <br>
+                  so you can scan it at the exit machines!
+              </p>
+          </main>
+      </div>
+  </body>
+  </html>
+  
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Payment Options - Purdue Parking</title>
+</head>
+<body>
+    <div class="payment-options">
+        <header class="header">
+            <nav class="nav-menu">
+                <div class="user-info">
+                    <img class="QRcode" src="QRcode.png" alt="User icon" />
+                </div>
+                <div class="menu-toggle">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </nav>
+        </header>
+        
+        <main class="main-content">
+            <h1 class="page-title">Payment Options</h1>
+            
+            <section class="credit-card-section">
+                <div class="card-display">
+                    <div class="card-details">
+                        <h2>Credit Card 1</h2>
+                        <div class="card-number">**** **** **** 1234</div>
+                        <div class="card-info-grid">
+                            <div class="card-holder">Name Lastname</div>
+                            <div class="expiry">06/26</div>
+                            <div class="cvv">123</div>
+                        </div>
+                        <img class="card-logo" src="img/visa-1.svg" alt="Visa" />
+                    </div>
+                </div>
+            </section>
+            
+            <button class="add-payment-btn">
+                <span class="plus-icon">+</span>
+                <br>
+                <span>Add Payment Method</span>
+            </button>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!-- Common components to be included in all pages -->
+<template id="header">
+    <header class="header">
+      <div class="header-content">
+        <div class="group">
+          <div class="text-wrapper">Name</div>
+          <img class="person" src="img/person.svg" alt="User icon">
+        </div>
+        <div class="frame">
+          <div class="group-2">
+            <img class="line" src="img/line-4.svg" alt="">
+            <img class="img" src="img/line-8.svg" alt="">
+            <img class="line-2" src="img/line-6.svg" alt="">
+          </div>
+        </div>
+        <div class="logo">
+          <div class="text-wrapper">Purdue Parking</div>
+        </div>
+      </div>
+    </header>
+  </template>
+  
+  <!-- sidebar.html -->
+<div class="sidebar" id="sidebar">
+    <button onclick="document.getElementById('sidebar').style.display='none'">X Close</button>
+    <a href="/payments">Payments</a>
+    <a href="7.html">Settings</a>
+    <a href="8.html">Contact Us</a>
+    <a href="1.html">Log Out</a>
+</div>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+    <!-- Button to open the sidebar -->
+    <button class="open-btn" onclick="document.getElementById('sidebar').style.display='block'">☰ Open Sidebar</button>
+</body>
+</html>
+
+  
+
+
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Purdue Parking - Landing Page</title>
+      <link rel="stylesheet" href="globals.css">
+      <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <header class="header">
+          <img class="logo" src="Purdue.png" alt="Purdue Parking Logo" />
+          <h1 class="site-title">Purdue Parking</h1>
+      </header>
+  
+      <div class="landing-page-website">
+          <div class="div">
+              <div class="overlap">
+                  <input type="email" id="email" placeholder="Enter your email" required>
+              </div>
+  
+              <div class="overlap-group">
+                  <input type="password" id="password" placeholder="Enter your password" required>
+              </div>
+  
+              <div class="div-wrapper">
+                <br>
+                  <button class="login" onclick="window.location.href='2.html'">Log In</button>
+              </div>
+  
+              <div class="text-wrapper-4">
+                  <a href="forgot-password.html">Forgot Password?</a>
+              </div>
+          </div>
+      </div>
+  </body>
+  </html>
+  
+  
+  
+
